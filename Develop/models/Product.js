@@ -27,7 +27,7 @@ Product.init(
       }
   }, 
   stock: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: '10',
       validate: {
@@ -38,7 +38,7 @@ Product.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'Category',
-        key: id,
+        key: 'id',
       }
   },
   },
